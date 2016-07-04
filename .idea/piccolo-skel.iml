@@ -5,11 +5,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" packagePrefix="AcmeCorp" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" packagePrefix="AcmeCorp" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/opsbears" isTestSource="false" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/opsbears/piccolo-dic-auryn/vendor" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/opsbears/piccolo-http-guzzle/vendor" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/opsbears/piccolo-router-fastroute/vendor" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/opsbears/piccolo/build" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/opsbears/piccolo/vendor" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

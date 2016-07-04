@@ -8,17 +8,20 @@
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"AcmeCorp": "./tests"
+			"AcmeCorp\\": "./tests"
 		}
 	},
 	"require": {
 		"opsbears/piccolo": "dev-master",
 		"opsbears/piccolo-dic-auryn": "dev-master",
 		"opsbears/piccolo-http-guzzle": "dev-master",
-		"opsbears/piccolo-router-fastroute": "dev-master"
-	},
-	"require-dev": {
-		"phpunit/phpunit": "^5.4"
+		"opsbears/piccolo-templating": "dev-master",
+		"opsbears/piccolo-templating-engine-twig": "dev-master",
+		"opsbears/piccolo-web": "dev-master",
+		"opsbears/piccolo-web-io-standard": "dev-master",
+		"opsbears/piccolo-web-router-fastroute": "dev-master",
+		"opsbears/piccolo-web-processor-controller": "dev-master",
+		"opsbears/piccolo-web-processor-controller-view-templating": "dev-master"
 	},
 	"minimum-stability": "dev"
 }

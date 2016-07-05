@@ -3,7 +3,7 @@
 use AcmeCorp\App\Module\ApplicationModule;
 use AcmeCorp\App\Web\ErrorController;
 
-use Piccolo\HTTP\Guzzle\GuzzleHTTPModule;
+use Piccolo\Web\HTTP\Guzzle\GuzzleHTTPModule;
 use Piccolo\Templating\Engine\Twig\TwigTemplatingModule;
 use Piccolo\Templating\TemplatingModule;
 use Piccolo\Web\IO\Standard\StandardWebIOModule;

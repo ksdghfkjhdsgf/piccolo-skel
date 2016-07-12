@@ -24,3 +24,9 @@ that by changing composer.json and the code itself, then running `composer dump-
 The dev server can be started from the command line in the `htdocs` folder using this command: `php -S 127.0.0.1:8000`.
 
 Enjoy!
+
+## A few good talks to watch
+
+- [Agility and Architecture by Robert C. Martin](https://www.youtube.com/watch?v=0oGpWmS0aYQ)
+- [The Future of Programming by Robert C. Martin](https://www.youtube.com/watch?v=9Xy3QC7yxJw)
+- [The Transformation Priority Premise by Robert C. Martin](https://www.youtube.com/watch?v=B93QezwTQpI)

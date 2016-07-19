@@ -12,6 +12,8 @@
 		}
 	},
 	"require": {
+		"php": "^7.0",
+
 		"opsbears/piccolo": "dev-master",
 		"opsbears/piccolo-dic-auryn": "dev-master",
 		"opsbears/piccolo-templating": "dev-master",

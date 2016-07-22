@@ -14,16 +14,16 @@
 	"require": {
 		"php": "^7.0",
 
-		"opsbears/piccolo": "dev-master",
-		"opsbears/piccolo-dic-auryn": "dev-master",
-		"opsbears/piccolo-templating": "dev-master",
-		"opsbears/piccolo-templating-engine-twig": "dev-master",
-		"opsbears/piccolo-web": "dev-master",
-		"opsbears/piccolo-web-http-guzzle": "dev-master",
-		"opsbears/piccolo-web-io-standard": "dev-master",
-		"opsbears/piccolo-web-router-fastroute": "dev-master",
-		"opsbears/piccolo-web-processor-controller": "dev-master",
-		"opsbears/piccolo-web-processor-controller-view-templating": "dev-master"
+		"opsbears/piccolo": "^1.0",
+		"opsbears/piccolo-dic-auryn": "^1.0",
+		"opsbears/piccolo-templating": "^1.0",
+		"opsbears/piccolo-templating-engine-twig": "^1.0",
+		"opsbears/piccolo-web": "^1.0",
+		"opsbears/piccolo-web-http-guzzle": "^1.0",
+		"opsbears/piccolo-web-io-standard": "^1.0",
+		"opsbears/piccolo-web-router-fastroute": "^1.0",
+		"opsbears/piccolo-web-processor-controller": "^1.0",
+		"opsbears/piccolo-web-processor-controller-view-templating": "^1.0"
 	},
 	"minimum-stability": "dev"
 }

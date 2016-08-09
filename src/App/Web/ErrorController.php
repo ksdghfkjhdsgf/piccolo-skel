@@ -5,8 +5,10 @@ namespace AcmeCorp\App\Web;
 
 
 class ErrorController {
-	public function error() {
-		return [];
+	public function error(\Exception $exception) {
+		return [
+			'exception' => $exception
+		];
 	}
 
 	public function notFound() {

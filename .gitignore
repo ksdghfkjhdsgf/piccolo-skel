@@ -1,4 +1,17 @@
 build/
+bin/bundle
+bin/bundler
+bin/sass
+bin/sass-convert
+bin/scss
+.bundle/
+config/local.config.php
+Gemfile
+Gemfile.lock
+htdocs/package.json
+htdocs/Gruntfile.js
+htdocs/node_modules
+htdocs/.sass-cache
 
 # Created by .ignore support plugin (hsz.mobi)
 ### OSX template

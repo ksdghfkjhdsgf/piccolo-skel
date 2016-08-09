@@ -3,44 +3,18 @@
 use AcmeCorp\App\Module\ApplicationModule;
 use AcmeCorp\App\Web\ErrorController;
 
-use Piccolo\Web\HTTP\Guzzle\GuzzleHTTPModule;
-use Piccolo\Templating\Engine\Twig\TwigTemplatingModule;
-use Piccolo\Web\IO\Standard\StandardWebIOModule;
-use Piccolo\Web\Processor\Controller\ControllerProcessorWebModule;
-use Piccolo\Web\Processor\Controller\View\Templating\TemplatingViewModule;
-use Piccolo\Web\Routing\FastRoute\FastRouteModule;
+$localConfig = [];
+if (\file_exists(__DIR__ . '/local.config.php')) {
+	$localConfig = include(__DIR__ . '/local.config.php');
+}
 
-return [
+return \array_merge([
 	/**
 	 * Piccolo modules to load. These modules will consume the configuration below.
 	 */
 	'modules' => [
 		/**
-		 * Use Guzzle for HTTP request and response constructions
-		 */
-		GuzzleHTTPModule::class,
-		/**
-		 * Routing and controller handling
-		 */
-		ControllerProcessorWebModule::class,
-		/**
-		 * Standard PHP input and output mechanisms
-		 */
-		StandardWebIOModule::class,
-		/**
-		 * Use FastRoute for routing
-		 */
-		FastRouteModule::class,
-		/**
-		 * Use templating for the view
-		 */
-		TemplatingViewModule::class,
-		/**
-		 * Use Twig as the templating engine
-		 */
-		TwigTemplatingModule::class,
-		/**
-		 * Our application here
+		 * Our application here. This will load the other required modules.
 		 */
 		ApplicationModule::class,
 	],
@@ -66,4 +40,7 @@ return [
 		'routes' => [
 		],
 	],
-];
+	'twig' => [
+		'debug' => false
+	],
+], $localConfig);

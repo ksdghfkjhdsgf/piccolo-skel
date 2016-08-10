@@ -16,8 +16,15 @@
 				<li><a href="/" onclick="window.history.back();return false;">Go back</a> and try again.</li>
 				<li>Go to our <a href="/">Homepage</a> and try again from there.</li>
 			</ul>
+
+			<hr />
+
+			{% if twig.debug %}
+				{% if exception.message %}
+					<blockquote>{{ exception.message }}</blockquote>
+				{% endif %}
+				{{ dump(exception) }}
+			{% endif %}
 		</div>
 	</div>
-
-	{{ dump(exception) }}
 {% endblock %}

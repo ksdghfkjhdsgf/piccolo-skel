@@ -12,5 +12,8 @@
         "respond": "^0.9.0",
         "respond.js": "^1.4.2",
         "open-sans-fontface": "^1.4.0"
+    },
+    "devDependencies": {
+        "uglify-js": "~2.7.0",
     }
 }

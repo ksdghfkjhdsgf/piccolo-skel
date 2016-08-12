@@ -49,6 +49,10 @@ class ApplicationModule extends AbstractModule {
 	}
 
 	public function loadConfiguration(array &$moduleConfig, array &$globalConfig) {
-		TemplatingViewModule::addTemplateRoot($globalConfig, __DIR__ . '/../Web/Views', 'AcmeCorp\\App\\Web\\');
+		/**
+		 * @var TemplatingViewModule $templatingViewModule
+		 */
+		$templatingViewModule = $this->getRequiredModule(TemplatingViewModule::class);
+		$templatingViewModule->addTemplateRoot($globalConfig, __DIR__ . '/../Web/Views','AcmeCorp\\App\\Web\\');
 	}
 }

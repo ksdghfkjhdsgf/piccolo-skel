@@ -41,7 +41,7 @@ Running the frontend build can similarly be done by using phing:
 vendor/bin/phing frontend-build
 ```
 
-This will run the Grunt script located in Gruntfile.js.dist (copied to the location in htdocs by frontend-install).
+This will run the frontend build (sass and uglify.js).
 
 ## Deployment
 

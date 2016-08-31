@@ -2,6 +2,7 @@
 
 namespace AcmeCorp\App\Module;
 
+use AcmeCorp\App\Web\ErrorController;
 use Piccolo\DependencyInjection\DependencyInjectionContainer;
 use Piccolo\Module\AbstractModule;
 use Piccolo\Templating\Engine\Twig\TwigTemplateEngine;
@@ -59,5 +60,28 @@ class WebModule extends AbstractModule {
 		 */
 		$templatingViewModule = $this->getRequiredModule(TemplatingViewModule::class);
 		$templatingViewModule->addTemplateRoot($globalConfig, __DIR__ . '/../Web/Views','AcmeCorp\\App\\Web\\','App');
+
+		/**
+		 * Routing information via FastRoute. (This can be easily replaced.)
+		 *
+		 * @see https://github.com/nikic/FastRoute
+		 */
+		$globalConfig['fastroute'] = [
+			/**
+			 * Error handlers. The fastroute module supports 404, 405 and 500 error handlers.
+			 */
+			'errorHandlers' => [
+				404 => [ErrorController::class, 'notFound'],
+				405 => [ErrorController::class, 'methodNotAllowed'],
+				500 => [ErrorController::class, 'error'],
+			],
+			/**
+			 * Routes. Examples:
+			 *
+			 * ['GET',  '/{slug:[a-zA-Z\-]+}', BlogController::class, 'postAction'],
+			 */
+			'routes' => [
+			],
+		];
 	}
 }

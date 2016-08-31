@@ -1,7 +1,7 @@
 <?php
 
+use AcmeCorp\App\Module\WebApplication;
 use Piccolo\DependencyInjection\Auryn\AurynDependencyInjectionContainer;
-use Piccolo\Web\WebApplication;
 
 require_once (__DIR__ . '/../vendor/autoload.php');
 

@@ -5,7 +5,6 @@ namespace AcmeCorp\App\Module;
 use AcmeCorp\App\Web\ErrorController;
 use Piccolo\DependencyInjection\DependencyInjectionContainer;
 use Piccolo\Module\AbstractModule;
-use Piccolo\Templating\Engine\Twig\TwigTemplateEngine;
 use Piccolo\Templating\Engine\Twig\TwigTemplatingModule;
 use Piccolo\Templating\TemplatingModule;
 use Piccolo\Web\HTTP\Guzzle\GuzzleHTTPModule;
